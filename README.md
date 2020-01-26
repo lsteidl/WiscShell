@@ -1,5 +1,5 @@
 # WiscShell
-Unix Shell Created as a class project for Operating Systems course
+Unix Shell Created as a class project for Operating Systems course. LinkedList implemented to maintain command history.
 
 ## Overview
 
