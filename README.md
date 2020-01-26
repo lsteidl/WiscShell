@@ -104,7 +104,7 @@ In this project, you should implement exit, cd, history, and path as built-in co
 
     path: The path command takes 0 or more arguments, with each argument separated by whitespace from the others. A typical usage would be like this: wish> path /bin/ /usr/bin, which would add /bin/ and /usr/bin to the search path of the shell. If the user sets path to be empty, then the shell should not be able to run any programs (except built-in commands). The path command always overwrites the old path with the newly specified path. Also, notice in the previous example that one path ends with a / while the other does not. The shell should be robust enough to run programs in both directories.
 
-##Redirection
+## Redirection
 
 Many times, a shell user prefers to send the output of a program to a file rather than to the screen. Usually, a shell provides this nice feature with the > character. Formally this is named as redirection of standard output. To make your shell users happy, your shell should also include this feature, but with a slight twist (explained below).
 
