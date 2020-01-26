@@ -1,7 +1,7 @@
 # WiscShell
 Unix Shell Created as a class project for Operating Systems course
 
-##Overview
+## Overview
 
 In this assignment, you will implement a command line interpreter (CLI) or, as it is more commonly known, a shell. The shell should operate in this basic way: when you type in a command (in response to its prompt), the shell creates a child process that executes the command you entered and then prompts for more user input when it has finished.
 
@@ -26,7 +26,7 @@ One difference between batch and interactive modes: in interactive mode, a promp
 
 You should structure your shell such that it creates a process for each new command (the exceptions are built-in commands, discussed below). Your basic shell should be able to parse a command and run the program corresponding to the command. For example, if the user types ls -la /tmp, your shell should run the program /bin/ls with the given arguments -la and /tmp (how does the shell know to run /bin/ls? It’s something called the shell path; more on this below).
 
-##Structure
+## Structure
 Basic Shell
 
 The shell is very simple (conceptually): it runs in a while loop, repeatedly asking for input to tell it what command to execute. It then executes that command. The loop continues indefinitely, until the user types the built-in command exit, at which point it exits. That’s it!
@@ -115,7 +115,8 @@ If the output file exists before you run your program, you should simple overwri
 The exact format of redirection is a command (and possibly some arguments) followed by the redirection symbol followed by a filename. Multiple redirection operators or multiple files to the right of the redirection sign are errors.
 
 Note: don’t worry about redirection for built-in commands (e.g., we will not test what happens when you type path /bin > file).
-Piping
+
+## Piping
 
 Another popular feature which shells offer is the ability to send the output of one command onto a second command in a single line of input. This allows users to chain commands together without using intermediate files. This ability is commonly known as piping because the “pipe” character | is often used to represent the command.
 
