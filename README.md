@@ -1,5 +1,7 @@
 # WiscShell
 Unix Shell Created as a class project for Operating Systems course. LinkedList implemented to maintain command history.
+implementation of exit, cd, history, and path as built-in commands
+implementation of redirection (send the output of a program to a file rather than to the screen) and piping (sending the output of one command onto a second command in a single line of input).
 
 ## Overview
 
